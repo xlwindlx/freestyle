@@ -9,7 +9,7 @@ pipeline {
 		stage('docker build and push') {
 			steps {
 				sh '''
-				docker build -t 192.168.8.100:5000/webtest:2.0
+				docker build -t 192.168.8.100:5000/webtest:2.0 .
 				docker push 192.168.8.100:5000/webtest:2.0
 				'''
 			}
