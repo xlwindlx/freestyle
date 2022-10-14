@@ -1,5 +1,5 @@
 FROM centos:7
-RUN yum update
+RUN yum -y update
 RUN yum -y install httpd curl
 RUN curl -L https://www.naver.com > /var/www/html/index.html
 EXPOSE 80
